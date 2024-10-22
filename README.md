@@ -84,7 +84,7 @@ The workshop will cover the following topics:
 ## 👨‍💻 Author
 
 <p style="margin-top: 20px;"></p>
-<img src="https://scontent.falg7-6.fna.fbcdn.net/v/t45.1600-4/464170214_120213357814710084_744840660691057010_n.jpg?stp=cp0_dst-jpg_p526x296_q75_spS444&_nc_cat=106&ccb=1-7&_nc_sid=c02adf&_nc_ohc=5A93IzrXC84Q7kNvgFjehes&_nc_zt=1&_nc_ht=scontent.falg7-6.fna&_nc_gid=AlIL-XnEu_o-Uf3DXdaG4OT&oh=00_AYABEkdknOh8NZAvySBM16V3WmcUFkUNHdCvPVSR_Oq35w&oe=671DE223" alt="BENRABAH Mohamed" width="300" height="200"/>
+<img src="https://scontent.falg7-6.fna.fbcdn.net/v/t45.1600-4/464170214_120213357814710084_744840660691057010_n.jpg?stp=cp0_dst-jpg_p526x296_q75_spS444&_nc_cat=106&ccb=1-7&_nc_sid=c02adf&_nc_ohc=5A93IzrXC84Q7kNvgFjehes&_nc_zt=1&_nc_ht=scontent.falg7-6.fna&_nc_gid=AlIL-XnEu_o-Uf3DXdaG4OT&oh=00_AYABEkdknOh8NZAvySBM16V3WmcUFkUNHdCvPVSR_Oq35w&oe=671DE223" alt="BENRABAH Mohamed" width="300" height="300"/>
 
 - **BENRABAH Mohamed**: MERN Stack Developer and Workshop Host at **Algeria 2.0**.
 - **Portfolio**: [My Portfolio](https://benrabah-mohamed.netlify.app/)
