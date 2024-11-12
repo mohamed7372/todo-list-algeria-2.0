@@ -1,14 +1,12 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import CardCategory from "./components/CardCategory";
+import TaskCard from "./components/TaskCard";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className="bg-gray-800 w-full h-screen">
-      <CardCategory number={10} name={"lorem"} />
+      <TaskCard task="asdfasdf" />
     </div>
   );
 }
