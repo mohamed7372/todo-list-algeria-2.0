@@ -1,9 +1,20 @@
 import { Checkbox, Flex, Progress } from "antd";
+import { useState } from "react";
 
-const TaskCard = ({ number, task }) => {
+const TaskCard = ({ number, task, theme = 1 }) => {
+  const [isCheck, setIsCheck] = useState(false);
+
   return (
-    <div className="bg-white rounded-lg px-6 space-y-2 py-3">
-      <Checkbox onChange={() => {}}>{task}</Checkbox>
+    <div className="bg-white rounded-lg space-y-2 w-full">
+      <Checkbox
+        className={`circle-checkbox ${
+          theme === 1 ? "circle-checkbox-color-1" : "circle-checkbox-color-2"
+        } w-full px-6 py-4 shadow-[3px_0px_13px_-7px_rgba(59,_130,_246,_0.15)] rounded-lg`}
+        onChange={() => setIsCheck(!isCheck)}
+        value={isCheck}
+      >
+        <span className={`${isCheck && "line-through"}`}>{task}</span>
+      </Checkbox>
     </div>
   );
 };
