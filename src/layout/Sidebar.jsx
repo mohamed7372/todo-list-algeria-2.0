@@ -2,6 +2,7 @@ import React from "react";
 import ImageCard from "../components/ImageCard";
 import IMAGES from "../assets/constants/images";
 import ICONS from "../assets/constants/icons";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -15,9 +16,21 @@ const Sidebar = () => {
       </div>
       <div>
         <ul className="space-y-6">
-          <li className="text-lg space-x-4 flex items-center hover:text-primary-100 hover:bg-primary-100/20 py-2 rounded-lg cursor-pointer hover:pl-10 transform duration-300">
-            <img src={ICONS.CATEGORY} alt="" className="w-8" />
-            <p>Categories</p>
+          <li className="">
+            <Link to={"/"}>
+              <div className="text-lg space-x-4 flex items-center hover:text-primary-100 hover:bg-primary-100/20 py-2 rounded-lg cursor-pointer hover:pl-10 transform duration-300">
+                <img src={ICONS.CATEGORY} alt="" className="w-8" />
+                <p>Home</p>
+              </div>
+            </Link>
+          </li>
+          <li>
+            <Link to={"/category"}>
+              <div className="text-lg space-x-4 flex items-center hover:text-primary-100 hover:bg-primary-100/20 py-2 rounded-lg cursor-pointer hover:pl-10 transform duration-300">
+                <img src={ICONS.CATEGORY} alt="" className="w-8" />
+                <p>Categories</p>
+              </div>
+            </Link>
           </li>
           <li className="text-lg space-x-4 flex items-center hover:text-primary-100 hover:bg-primary-100/20 py-2 rounded-lg cursor-pointer hover:pl-10 transform duration-300">
             <img src={ICONS.GITHUB} alt="" className="w-8" />
@@ -27,9 +40,13 @@ const Sidebar = () => {
             <img src={ICONS.PORTFOLIO} alt="" className="w-8" />
             <p>My portfolio</p>
           </li>
-          <li className="text-lg space-x-4 flex items-center hover:text-primary-100 hover:bg-primary-100/20 py-2 rounded-lg cursor-pointer hover:pl-10 transform duration-300">
-            <img src={ICONS.SETTINGS} alt="" className="w-8" />
-            <p>Settings</p>
+          <li>
+            <Link to={"/settings"}>
+              <div className="text-lg space-x-4 flex items-center hover:text-primary-100 hover:bg-primary-100/20 py-2 rounded-lg cursor-pointer hover:pl-10 transform duration-300">
+                <img src={ICONS.SETTINGS} alt="" className="w-8" />
+                <p>Settings</p>
+              </div>
+            </Link>
           </li>
         </ul>
       </div>

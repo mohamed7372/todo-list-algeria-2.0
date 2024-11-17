@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "name": "Workshop 1",
+    "color": "#936ED4"
+  },
+  {
+    "id": 2,
+    "name": "Workshop 2",
+    "color": "#A0DEEE"
+  },
+  {
+    "id": 3,
+    "name": "Workshop 3",
+    "color": "#86CBED"
+  },
+  {
+    "id": 4,
+    "name": "Workshop 4",
+    "color": "#FADADE"
+  },
+  {
+    "id": 5,
+    "name": "Workshop 5",
+    "color": "#F0B0BC"
+  },
+  {
+    "id": 6,
+    "name": "Workshop 6",
+    "color": "#F48BA9"
+  },
+
+  {
+    "id": 7,
+    "name": "Workshop 7",
+    "color": "#EE8C2C"
+  },
+  {
+    "id": 8,
+    "name": "Workshop 8",
+    "color": "#EEAD1A"
+  },
+  {
+    "id": 9,
+    "name": "Workshop 9",
+    "color": "#C93F4C"
+  },
+  {
+    "id": 10,
+    "name": "Workshop 10",
+    "color": "#7AA03B"
+  }
+]

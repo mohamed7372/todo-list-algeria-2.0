@@ -1,8 +1,10 @@
 import { Flex, Progress } from "antd";
 
-const CategoryCard = ({ number, name, number_active_task }) => {
+const CategoryCard = ({ number, name, color, number_active_task }) => {
+  const styleColor = { backgroundColor: color };
+
   return (
-    <div className="bg-white rounded-lg px-6 space-y-2 py-3 w-[230px] shadow-[3px_0px_13px_-7px_rgba(59,_130,_246,_0.15)]">
+    <div className="bg-white rounded-lg px-6 space-y-2 py-4 shadow-[3px_0px_13px_-7px_rgba(59,_130,_246,_0.15)] border border-[#f0f0f0] w-full">
       <p className="space-x-1 text-gray-200 font-semibold text-sm">
         <span>{number}</span>
         <span>tasks</span>
@@ -14,7 +16,8 @@ const CategoryCard = ({ number, name, number_active_task }) => {
         <Progress
           showInfo={false}
           percent={(number_active_task * 100) / number}
-          className=".progress-green"
+          // className=".progress-green"
+          strokeColor={color}
         />
       </Flex>
     </div>

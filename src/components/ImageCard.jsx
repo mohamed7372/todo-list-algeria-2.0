@@ -3,12 +3,13 @@ import { Button, Flex, Progress } from "antd";
 
 const ImageCard = ({ percent }) => {
   return (
-    <div vertical gap="small">
-      <Flex vertical gap="small">
-        <Progress percent={percent} type="circle">
-          {/* here my image  */}
-        </Progress>
-      </Flex>
+    <div className="rounded-full w-32 overflow-hidden h-32">
+      {/* here my image  */}
+      <img
+        src="benrabah_mohamed.jpg"
+        alt=""
+        className="w-full h-full object-cover"
+      />
     </div>
   );
 };

@@ -2,7 +2,7 @@
 
 Welcome to the **"Advanced React: State Management with Context and Hooks"** workshop project! This repository contains the code for the task management app we'll be building during the **Algeria 2.0** event on **21st November 2024**. This workshop will dive deep into React's Context API and Hooks to manage global state and create a fully functional task management app.
 
-![Workshop Banner](https://scontent.falg6-1.fna.fbcdn.net/v/t39.30808-6/462302410_962104192627438_2195733693526985708_n.jpg?stp=dst-jpg_s960x960&_nc_cat=100&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=4U7XojKt4TUQ7kNvgGLS848&_nc_zt=23&_nc_ht=scontent.falg6-1.fna&_nc_gid=AeCRNl58ywtllF0JoQrfzaL&oh=00_AYCngkxpJ4tHsBKPnWi_m0xE5OUbpjSZtei_fWEXb6GiLg&oe=671DEFE1)
+![Workshop Banner](./public/algeria20.jpg)
 
 ## 📝 Project Description
 
@@ -84,7 +84,7 @@ The workshop will cover the following topics:
 ## 👨‍💻 Author
 
 <p style="margin-top: 20px;"></p>
-<img src="https://scontent.falg7-6.fna.fbcdn.net/v/t45.1600-4/464170214_120213357814710084_744840660691057010_n.jpg?stp=cp0_dst-jpg_p526x296_q75_spS444&_nc_cat=106&ccb=1-7&_nc_sid=c02adf&_nc_ohc=5A93IzrXC84Q7kNvgFjehes&_nc_zt=1&_nc_ht=scontent.falg7-6.fna&_nc_gid=AlIL-XnEu_o-Uf3DXdaG4OT&oh=00_AYABEkdknOh8NZAvySBM16V3WmcUFkUNHdCvPVSR_Oq35w&oe=671DE223" alt="BENRABAH Mohamed" width="300" height="300"/>
+<img src="./public/benrabah_mohamed.jpg" width="300" height="300"/>
 
 - **BENRABAH Mohamed**: MERN Stack Developer and Workshop Host at **Algeria 2.0**.
 - **Portfolio**: [My Portfolio](https://benrabah-mohamed.netlify.app/)
