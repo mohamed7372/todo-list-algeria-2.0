@@ -1,6 +1,6 @@
 # Advanced React: State Management with Context and Hooks Workshop
 
-Welcome to the **"Advanced React: State Management with Context and Hooks"** workshop project! This repository contains the code for the task management app we'll be building during the **Algeria 2.0** event on **21st November 2024**. This workshop will dive deep into React's Context API and Hooks to manage global state and create a fully functional task management app.
+Welcome to the **"Advanced React: State Management with Context and Hooks"** workshop project! This repository contains the code for the task management app we'll be building during the **Algeria 2.0** event on **21st November 2024 at 9:00 a.m**. This workshop will dive deep into React's Context API and Hooks to manage global state and create a fully functional task management app.
 
 ![Workshop Banner](./public/algeria20.jpg)
 
@@ -19,7 +19,7 @@ The goal of this project is to create a **Task Management Application** using **
 
 ## 🌟 Event Name
 
-This workshop is part of the **Algeria 2.0** event happening on **21st November 2024**. The event is one of the biggest tech conferences in the region, bringing together developers, tech enthusiasts, and industry professionals.
+This workshop is part of the **Algeria 2.0** event happening on **21st November 2024 at 9:00 a.m**. The event is one of the biggest tech conferences in the region, bringing together developers, tech enthusiasts, and industry professionals.
 
 ## 🚀 Getting Started
 
@@ -33,9 +33,30 @@ To run this project on your local machine, follow the instructions below:
 
 ### Installation
 
-1. Clone this repository:
+1. install nodejs
+
+2. test if nodejs is installed: (node: v22.11.0) (npm: v10.0.0)
+
+   ```bash
+   node -v
+   npm -v
+   ```
+
+3. Clone this repository:
+
    ```bash
    git clone https://github.com/mohamed7372/todo-list-algeria-2.0
+   ```
+
+4. Install dependencies:
+
+   ```bash
+   npm i
+   ```
+
+5. Start react app:
+   ```bash
+   npm run dev
    ```
 
 ## 📸 Screenshots
@@ -44,15 +65,11 @@ Here are some screenshots of the **Task Management App** UI:
 
 ### Home Page:
 
-![Home Page](https://user-images.githubusercontent.com/your-homepage-screenshot-link)
-
-### Task Categories:
-
-![Task Categories](https://user-images.githubusercontent.com/your-categories-screenshot-link)
+![Home Page](public/home-page.png)
 
 ### Task Management:
 
-![Task Management](https://user-images.githubusercontent.com/your-task-management-screenshot-link)
+![Task Management](public/add-task.png)
 
 ## 📚 Workshop Agenda
 
@@ -84,7 +101,7 @@ The workshop will cover the following topics:
 ## 👨‍💻 Author
 
 <p style="margin-top: 20px;"></p>
-<img src="./public/benrabah_mohamed.jpg" width="300" height="300"/>
+<img src="./public/benrabah_mohamed.jpg" width="300"/>
 
 - **BENRABAH Mohamed**: MERN Stack Developer and Workshop Host at **Algeria 2.0**.
 - **Portfolio**: [My Portfolio](https://benrabah-mohamed.netlify.app/)
@@ -95,6 +112,7 @@ The workshop will cover the following topics:
 
 - **Event**: Algeria 2.0
 - **Date**: 21st November 2024
+- **Time**: 9:00 a.m
 - **Location**: Algiers, Algeria
 
 ## 🛠️ Built With

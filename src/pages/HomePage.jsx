@@ -7,10 +7,26 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import SearchBar from "../layout/SearchBar";
 import ICONS from "../assets/constants/icons";
+import TaskCard from "../components/TaskCard";
 
 const HomePage = () => {
   const [search, setSearch] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const tasks = [
+    {
+      id: 1,
+      title: "learn advanced react",
+    },
+    {
+      id: 2,
+      title: "learn hooks",
+    },
+    {
+      id: 3,
+      title: "learn api context",
+    },
+  ];
 
   const showModal = () => {
     setIsModalOpen(true);
@@ -54,9 +70,9 @@ const HomePage = () => {
         {/* section to display tasks  */}
         <SectionCards title={"today's tasks"} css={"flex-col"}>
           <div className="h-[300px]  overflow-y-auto w-full space-y-2 pr-4">
-            {/* {tasks?.map((item) => (
+            {tasks?.map((item) => (
               <TaskCard task={item?.title} key={item?.id} />
-            ))} */}
+            ))}
           </div>
         </SectionCards>
       </div>
