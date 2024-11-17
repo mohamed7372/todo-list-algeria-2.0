@@ -1,5 +1,3 @@
-import { Checkbox, Flex, Progress } from "antd";
-
 const SectionCards = ({ title, children, css = "space-x-2" }) => {
   return (
     <div className="">

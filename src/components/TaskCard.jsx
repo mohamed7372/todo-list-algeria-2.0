@@ -1,4 +1,4 @@
-import { Checkbox, Flex, Progress } from "antd";
+import { Checkbox } from "antd";
 import { useState } from "react";
 
 const TaskCard = ({ number, task, theme = 1 }) => {

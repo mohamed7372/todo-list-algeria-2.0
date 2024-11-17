@@ -1,7 +1,5 @@
 import React from "react";
-import { Button, Flex, Progress } from "antd";
-
-const ImageCard = ({ percent }) => {
+const ImageCard = () => {
   return (
     <div className="rounded-full w-32 overflow-hidden h-32">
       {/* here my image  */}
