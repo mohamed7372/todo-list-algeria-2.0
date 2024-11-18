@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ICONS from "../assets/constants/icons";
 
-const TaskCard = ({ number, task, theme = 1, color }) => {
+const TaskCard = ({ task, color }) => {
   const [isCheck, setIsCheck] = useState(false);
 
   const styleColor = isCheck

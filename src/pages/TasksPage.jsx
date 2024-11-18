@@ -10,6 +10,58 @@ const TasksPage = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    const homework = [
+      {
+        id: 1,
+        title: "create Theme context (+20 pts)",
+        color: "#936ED4",
+        isCheck: false,
+      },
+      {
+        id: 2,
+        title: "create Language context (+20 pts)",
+        color: "#A0DEEE",
+        isCheck: false,
+      },
+      {
+        id: 3,
+        title: "create Category context (+30 pts)",
+        color: "#86CBED",
+        isCheck: false,
+      },
+      {
+        id: 4,
+        title: "make search by name task (+10 pts)",
+        color: "#FADADE",
+        isCheck: false,
+      },
+      {
+        id: 5,
+        title: "remove task (+5 pts)",
+        color: "#F0B0BC",
+        isCheck: false,
+      },
+      {
+        id: 6,
+        title: "create page settings (+15 pts)",
+        color: "#F48BA9",
+        isCheck: false,
+      },
+      {
+        id: 7,
+        title: "create page categories (+15 pts)",
+        color: "#EE8C2C",
+        isCheck: false,
+      },
+      {
+        id: 8,
+        title: "create modal add new category (+25 pts)",
+        color: "#EEAD1A",
+        isCheck: false,
+      },
+    ];
+    localStorage.setItem("tasks", JSON.stringify(homework));
+
     const intervalTask = setInterval(() => {
       setCount((c) => {
         if (c >= totalTask) {
