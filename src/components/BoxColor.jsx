@@ -1,8 +1,14 @@
-const BoxColor = ({ color }) => {
+const BoxColor = ({ color, selected }) => {
   const styleColor = { backgroundColor: color };
+  const styleBackground =
+    color === selected ? { backgroundColor: selected } : {};
 
+  console.log(selected);
   return (
-    <div className="border rounded-full p-3 w-fit cursor-pointer hover:animate-pulse">
+    <div
+      className="border rounded-full p-3 w-fit cursor-pointer hover:animate-pulse "
+      style={styleBackground}
+    >
       <div
         className={`rounded-full p-1 w-8 h-8 flex items-center justify-center`}
         style={styleColor}

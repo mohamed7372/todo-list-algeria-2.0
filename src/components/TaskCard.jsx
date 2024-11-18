@@ -1,20 +1,25 @@
-import { Checkbox } from "antd";
 import { useState } from "react";
+import ICONS from "../assets/constants/icons";
 
-const TaskCard = ({ number, task, theme = 1 }) => {
+const TaskCard = ({ number, task, theme = 1, color }) => {
   const [isCheck, setIsCheck] = useState(false);
 
+  const styleColor = isCheck
+    ? { backgroundColor: color }
+    : { border: `3px solid`, borderColor: color };
+
   return (
-    <div className="bg-white rounded-lg space-y-2 w-full border border-[#f0f0f0]">
-      <Checkbox
-        className={`circle-checkbox ${
-          theme === 1 ? "circle-checkbox-color-1" : "circle-checkbox-color-2"
-        } w-full px-4 md:px-6 py-3 md:py-5 shadow-[3px_0px_13px_-7px_rgba(59,_130,_246,_0.15)] rounded-lg`}
-        onChange={() => setIsCheck(!isCheck)}
-        value={isCheck}
+    <div
+      className="bg-white space-x-4 flex items-center border border-[#f0f0f0] w-full px-4 md:px-6 py-3 md:py-5 shadow-[3px_0px_13px_-7px_rgba(59,_130,_246,_0.15)] rounded-lg cursor-pointer"
+      onClick={() => setIsCheck(!isCheck)}
+    >
+      <div
+        className="w-6 h-6 rounded-full flex items-center justify-center"
+        style={styleColor}
       >
-        <span className={`${isCheck && "line-through"}`}>{task}</span>
-      </Checkbox>
+        <img src={ICONS.CHECK} alt="" />
+      </div>
+      <p className={`${isCheck && "line-through text-gray-400"}`}>{task}</p>
     </div>
   );
 };

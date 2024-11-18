@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import SectionCards from "../components/SectionCards";
 import CategoryCard from "../components/CategoryCard";
 import AddTask from "../components/AddTask";
@@ -8,25 +8,13 @@ import "swiper/css";
 import SearchBar from "../layout/SearchBar";
 import ICONS from "../assets/constants/icons";
 import TaskCard from "../components/TaskCard";
+import { TaskContext } from "../contexts/TaskContext";
 
 const HomePage = () => {
   const [search, setSearch] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const tasks = [
-    {
-      id: 1,
-      title: "learn advanced react",
-    },
-    {
-      id: 2,
-      title: "learn hooks",
-    },
-    {
-      id: 3,
-      title: "learn api context",
-    },
-  ];
+  const { tasks } = useContext(TaskContext);
 
   const showModal = () => {
     setIsModalOpen(true);
@@ -71,7 +59,7 @@ const HomePage = () => {
         <SectionCards title={"today's tasks"} css={"flex-col"}>
           <div className="h-[300px]  overflow-y-auto w-full space-y-2 pr-4">
             {tasks?.map((item) => (
-              <TaskCard task={item?.title} key={item?.id} />
+              <TaskCard task={item?.title} key={item?.id} color={item?.color} />
             ))}
           </div>
         </SectionCards>
