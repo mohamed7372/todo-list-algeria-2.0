@@ -3,7 +3,6 @@ const BoxColor = ({ color, selected }) => {
   const styleBackground =
     color === selected ? { backgroundColor: selected } : {};
 
-  console.log(selected);
   return (
     <div
       className="border rounded-full p-3 w-fit cursor-pointer hover:animate-pulse "

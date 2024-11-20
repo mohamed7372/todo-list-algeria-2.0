@@ -13,6 +13,8 @@ const HomePage = () => {
   const [search, setSearch] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const tasks = [];
+
   const showModal = () => {
     setIsModalOpen(true);
   };
@@ -40,6 +42,7 @@ const HomePage = () => {
                 style={{
                   width: "200px",
                 }}
+                key={item.id}
               >
                 <CategoryCard
                   name={item?.name}
@@ -55,7 +58,7 @@ const HomePage = () => {
         {/* section to display tasks  */}
         <SectionCards title={"today's tasks"} css={"flex-col"}>
           <div className="h-[300px]  overflow-y-auto w-full space-y-2 pr-4">
-            {[]?.map((item) => (
+            {tasks?.map((item) => (
               <TaskCard task={item?.title} key={item?.id} color={item?.color} />
             ))}
           </div>

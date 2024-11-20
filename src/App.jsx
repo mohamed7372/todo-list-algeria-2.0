@@ -1,4 +1,3 @@
-import { useState } from "react";
 import HomePage from "./pages/HomePage";
 import Sidebar from "./layout/Sidebar";
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";

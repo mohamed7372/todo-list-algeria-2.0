@@ -29,7 +29,7 @@ const AddTask = ({ isModalOpen, handleCancel }) => {
 
           <div className="grid grid-cols-3 md:grid-cols-5 gap-2 md:gap-4">
             {categoriesData?.map((item) => (
-              <div onClick={() => setColorSelected(item.color)}>
+              <div onClick={() => setColorSelected(item.color)} key={item.id}>
                 <BoxColor
                   key={item.id}
                   color={item.color}
