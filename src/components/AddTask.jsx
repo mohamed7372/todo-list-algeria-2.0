@@ -1,14 +1,25 @@
 import BoxColor from "./BoxColor";
 import { Modal } from "antd";
 import categoriesData from "../data/categories.json";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { TaskContext } from "../contexts/TaskContext";
 
 const AddTask = ({ isModalOpen, handleCancel }) => {
   const [colorSelected, setColorSelected] = useState("");
   const [title, setTitle] = useState("");
 
+  const { dispatch } = useContext(TaskContext);
+
   const handleNewTask = (e) => {
     e.preventDefault();
+
+    dispatch({
+      type: "ADD_TASK",
+      task: {
+        title,
+        color: colorSelected,
+      },
+    });
 
     setColorSelected("");
     setTitle("");

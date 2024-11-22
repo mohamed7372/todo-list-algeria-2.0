@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import SectionCards from "../components/SectionCards";
 import CategoryCard from "../components/CategoryCard";
 import AddTask from "../components/AddTask";
@@ -8,12 +8,13 @@ import "swiper/css";
 import SearchBar from "../layout/SearchBar";
 import ICONS from "../assets/constants/icons";
 import TaskCard from "../components/TaskCard";
+import { TaskContext } from "../contexts/TaskContext";
 
 const HomePage = () => {
   const [search, setSearch] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const tasks = [];
+  const { tasks } = useContext(TaskContext);
 
   const showModal = () => {
     setIsModalOpen(true);
