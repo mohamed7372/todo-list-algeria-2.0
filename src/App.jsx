@@ -1,15 +1,22 @@
 import HomePage from "./pages/HomePage";
 import Sidebar from "./layout/Sidebar";
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
-import CategoryPage from "./pages/CategoryPage";
-import SettingsPage from "./pages/SettingsPage";
+// import CategoryPage from "./pages/CategoryPage";
+// import SettingsPage from "./pages/SettingsPage";
 import TasksPage from "./pages/TasksPage";
 import TaskProvider from "./contexts/TaskContext";
 import ThemeProvider from "./contexts/ThemeContext";
 import { Provider } from "react-redux";
 import store from "./stores";
-import { Suspense } from "react";
+import { Suspense, lazy } from "react";
 import { ErrorBoundary } from "react-error-boundary";
+
+const CategoryPage = lazy(() => import("./pages/CategoryPage"));
+const SettingsPage = lazy(() =>
+    import("./pages/SettingsPage").then((module) => {
+        return { default: module.SettingsPage };
+    })
+);
 
 function App() {
     return (
