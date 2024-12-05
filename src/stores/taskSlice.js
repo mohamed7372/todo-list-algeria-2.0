@@ -1,4 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
+import useLocalStorage from "../hooks/useLocalStorage";
+
+// use hooks local storage
+const [name, setName] = useLocalStorage("name", () => "");
+// const [name, setName] = useLocalStorage("name", "");
 
 const initialState = {
     tasks: [],
